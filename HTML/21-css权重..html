@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .big {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+      /* 权重等于 0.0.0.1 + 0.0.0.1 = 0.0.0.2 权重不会进位 */
+      ul li {
+        color: black;
+      }
+      /* 最终显示的是红色，因为.nav li 一个是0.0.1.0 加上0.0.0.1 
+      0.0.1.1 是大于 0.0.1.0的 */
+      .nav li {
+        color: red;
+      }
+      .li {
+        color: aqua;
+      }
+      /* 各权重数
+      继承或 * 0.0.0.0
+      标签选择器 0.0.0.1
+      类选择器和伪类选择器 0.0.1.0
+      id选择器 0.1.0.0
+      行内样式 1.0.0.0
+      ！important 无穷大
+      */
+    </style>
+  </head>
+  <body>
+    <!-- 虽然类选择器权重大，但是继承的属性权重是0.0.0.0 -->
+    <!-- 所以显示的是标签选择器的颜色 -->
+    <div class="big"><p>nihaoaefaf</p></div>
+    <div class="nav">
+      <ul>
+        <li class="li">afeaegagag</li>
+      </ul>
+    </div>
+  </body>
+</html>

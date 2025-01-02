@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        /* 有些元素会有默认边距，所以需要清除，避免不必要的麻烦 */
+        margin: 0;
+        padding: 0;
+      }
+      span {
+        /* 行内元素为了兼容性，尽量只设置水平外边距，不设置上下 */
+        margin: 10px;
+        /* 转换为块级元素或是行内块元素就行 */
+      }
+    </style>
+  </head>
+  <body>
+    <p>niafeaga</p>
+    <ul>
+      <li>faeag</li>
+    </ul>
+    <!-- 只有左右外边距生效 -->
+    <span>1235464</span>
+  </body>
+</html>

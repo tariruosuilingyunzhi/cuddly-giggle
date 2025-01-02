@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .one {
+        width: 100px;
+        height: 100px;
+        background-color: #461414;
+        color: aliceblue;
+        font-size: larger;
+      }
+      /* 样式具有层叠性，遵守就近原则
+      后面会把跟前面重叠的样式给覆盖掉，但是不重复的不受影响 */
+      .one {
+        background-color: #171675;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">加分啊发</div>
+  </body>
+</html>

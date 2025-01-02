@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .father {
+        width: 400px;
+        height: 400px;
+        background-color: pink;
+        margin-top: 50px;
+        /* 可以给父元素加边框或是内边距,这样边距会以它们为定位 */
+        /* border: 1px solid transparent; transparent颜色是透明 */
+        /* 内边距也行 */
+        /* padding: 1px; */
+        /* overflow: hidden;也可以解决，还不会有边的小缝隙 */
+        overflow: hidden;
+      }
+      .son {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        /* 小盒子并没有在父级元素往下100px，只有当子元素垂直边距大于父元素时
+        而是根据100px把父级元素连带顶了下去 */
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father"><div class="son"></div></div>
+  </body>
+</html>

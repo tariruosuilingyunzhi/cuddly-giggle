@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 给span添加宽度，左右外边距设置成auto */
+      .header {
+        width: 400px;
+        height: 200px;
+        background-color: pink;
+        margin-bottom: 20px;
+        text-align: center;
+        /* 解决办法是在行内元素行内块的父级设置text-align：center */
+      }
+      span {
+        /* 在header里并没有水平居中，因为行内元素不能设置宽度
+        行内元素宽度只会随内容而变化 */
+        width: 50px;
+        margin: 0 auto;
+        /* img */
+      }
+      img {
+        /* 同样行内块元素也无效 */
+        width: 227px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"><span>nihaohahaha</span></div>
+    <div class="header"><img src="nav1.jpg" alt="" /></div>
+  </body>
+</html>

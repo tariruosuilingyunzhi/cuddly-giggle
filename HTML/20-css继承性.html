@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 子元素会继承父元素的属性，有些元素不会继承 */
+      /* 跟字体元素有关的大多会继承，如font line */
+      div {
+        color: pink;
+        /* 字体大小后面的行高跟的可以不带单位
+        意思是字体大小的倍数，这样可以使行高更加灵活 */
+        font: 24px/1.5 "楷体";
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      我是div
+      <p>我是p</p>
+      <ul>
+        <li>我是li</li>
+      </ul>
+    </div>
+  </body>
+</html>

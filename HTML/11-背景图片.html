@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div {
+        width: auto;
+        /* height: 100%; */
+        /* 背景图片可以通过这个属性添加，一般默认none */
+        /* background-image: none; */
+        /* 一定要写url不然会报错 */
+        background-image: url(nav1.jpg);
+        /* 图片会自动填充，也就是横向纵向重复 */
+        /* 可以通过bg-repeat来调整 */
+        /* background-repeat: no-repeat; */
+        /* 是横向平铺 */
+        /* background-repeat: repeat-x */
+        /* 是zong向平铺 */
+        background-repeat: repeat-y;
+        /* 背景图片可以和背景颜色同时存在，不过图片会遮盖颜色 */
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div"></div>
+  </body>
+</html>

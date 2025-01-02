@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 链接伪类选择器 有四个 */
+      /* a: link 链接未被访问过的链接，也就是没有点击过的 */
+      /* 伪类选择器是按照LVHA顺序来的，不遵守，会导致样式不生效 */
+      /* a:link {
+        color: red;
+        text-decoration: none;
+      } */
+      /* a:visited 当链接点击过，就会被选中 */
+      /* a:visited {
+        color: orange;
+      } */
+      /* a:hover 当鼠标悬停在连接上时，被这个样式选中 */
+      /* 实际共作中的写法 */
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover {
+        color: blue;
+      }
+      /* a:active 当鼠标点击链接而未松手时，被选中 */
+      /* a:active {
+        color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <a href="#">hahahah</a>
+    <a href="">bu</a>
+  </body>
+</html>
